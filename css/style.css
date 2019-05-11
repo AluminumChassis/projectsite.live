@@ -1,0 +1,102 @@
+/* COPYRIGHT © 2019 BENJAMIN CICCARELLI */
+::selection {
+	background: rgba(0,0,0,.7);
+	color: white;
+}
+::-moz-selection {
+	background: rgba(0,0,0,.7);
+	color: white;
+}
+::-webkit-scrollbar { 
+	display: none; 
+}
+*{
+
+	transition: all .5s ease-out;
+	float: left;
+	font-family: sans-serif;
+}
+html{
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+}
+body {
+	height: 100vh;
+	background: linear-gradient(30deg,#fd2,#f3d);
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+#bg {
+	top: -5px;
+	left: -5px;
+	position: fixed;
+	z-index: -1;
+	width: calc(100vw + 10px);
+	height: calc(100vh + 10px);
+
+	background-image: url("../canyon.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+ 	filter: blur(3px);
+}
+#title {
+	font-size: 2vw;
+	font-weight: 700;
+	background-color: white;
+	color: black;
+	display: block;
+	padding: 1vw;
+	margin-left: 20vw;
+	margin-top: 4vw;
+	text-decoration: none;
+	border: 3px solid white;
+
+	mix-blend-mode: screen;
+}
+@keyframes slide  {
+  from {left: 120vw;}
+  to {left: -220vw;}
+}
+@keyframes slideBack {
+  from {left: -220vw;}
+  to {left: 120vw;}
+}
+#content {
+	font-weight: 400;
+	font-size:1.8vw;
+	background-color: white;
+	color: black;
+	display: block;
+	padding: 1vw;
+	width: 60vw;
+	margin-left: 20vw;
+	margin-top: 1vw;
+	text-decoration: none;
+	border: 3px solid white;
+
+	mix-blend-mode: screen;
+}
+h1,h6{
+	margin: 0
+}
+.bar {
+	width: 55vw;
+	margin-bottom: 1vh;
+}
+.right {
+	float: right;
+}
+.clickable {
+	user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+	padding: 1vh;
+	box-shadow: 0px 5px 5px -4px #333;
+	cursor: pointer;
+}
+.clickable:hover {
+	box-shadow: 0px 6px 6px -4px #000;
+}
