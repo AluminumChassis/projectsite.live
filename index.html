@@ -21,10 +21,11 @@
     <div id="title">ProjectSite.live</div>
     <div id="content">
     	Suggested Ideas (Click or tap to vote)
-
-    	<div class="clickable right">Add Idea</div>
-    	<div class="clickable bar">Cool App<div></div></div>
-    	<div class="clickable bar">Crazy Algorithm</div>
+    	<div class="clickable right" onclick="submit()" >Add Idea</div>
+      <input id="suggestion" placeholder="Suggestion" maxlength="100">
+      <div id="suggestions" style="margin-top: 4vh">
+        <div class="clickable bar">Loading...</div>
+      </div>
     </div>
     <div id="bg"></div>
   </body>
