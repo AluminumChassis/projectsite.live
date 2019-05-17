@@ -7,7 +7,6 @@ suggestions = document.getElementById('suggestions')
 suggestion = document.getElementById('suggestion')
 Http.onreadystatechange = function() {
 	suggestions.innerHTML = ""
-	suggestion.innerHTML = ""
 	e=this.responseText.split(",")
 	e.pop()
 	console.log(this.responseText)
@@ -21,4 +20,6 @@ Http.onreadystatechange = function() {
 function submit(){
 	Http.open("POST", url);
 	Http.send(suggestion.value);
+	suggestion.value = ""
+
 }
