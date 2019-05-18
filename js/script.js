@@ -47,7 +47,7 @@ function searchProjects(){
 	setTimeout(
 		function(){
 			if(!search) {
-				lookup.open("GET", searchURL + s.value);
+				lookup.open("GET", searchURL + s.value + "*");
 				console.log(searchURL + s.value)
 				lookup.send()
 			}
