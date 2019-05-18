@@ -93,9 +93,9 @@ h1,h6{
    -khtml-user-select: none; /* Konqueror HTML */
    -moz-user-select: none; /* Firefox */
    -ms-user-select: none; /* Internet Explorer/Edge */
-	padding: 1vh;
+	padding: .5vw;
 	box-shadow: 0px 5px 5px -4px #333;
-	cursor: pointer;
+	cursor: pointer;	
 }
 .clickable:hover {
 	box-shadow: 0px 6px 6px -4px #000;
@@ -104,15 +104,14 @@ h1,h6{
 	float: right;
 	outline: none;
 	border: none;
-	width: 20vw;
-
+	width: 15vw;
+	padding: .5vw;
 	padding-left: 10px;
-	font-size: 1.5vw;
+	font-size: 1.8vw;
 	box-shadow: 0px 5px 5px -4px #333;
-	height: calc(2vh + 2vw);
 }
 #search {
-
+	border-radius: 0px;
 	margin-bottom: 1vh;
 	padding-left: 10px;
 	float: left;
@@ -120,10 +119,12 @@ h1,h6{
 	outline: none;
 	border: none;
 	width: 20vw;
-	font-size: 1.5vw;
+	font-size: 1.8vw;
     box-sizing: border-box;
+
+	padding: .5vw;
+	padding-left: 10px;
 	box-shadow: 0px 5px 5px -4px #333;
-	height: calc(2vh + 2vw);
 }
 .result {
 	color: black;
@@ -131,17 +132,17 @@ h1,h6{
 	position: relative;
 	background-color: white;
 	text-decoration: none;
+	margin-bottom: .5vh;
 	width: 20vw;
 }
 #searchBar {
-
 	padding-left: 10px;
 	position: fixed;
 	outline: none;
 	border: none;
 	width: 20vw;
 	overflow-x: hidden;
-	right: 5vh;
+	right: 10vw;
 	top: 2vh;
 }
 hr {

@@ -1,4 +1,4 @@
-const url = "http://projectsiteback-env.d8mzdpwcvn.us-east-2.elasticbeanstalk.com/"
+const url = "https://projectsiteback-env.d8mzdpwcvn.us-east-2.elasticbeanstalk.com/"
 const searchURL = "https://search-resorch-vwcs6cz6izfgw6tb6nwoz4grly.us-east-2.es.amazonaws.com/main/_search?q="
 const site = "projectsite.live/"
 const post = new XMLHttpRequest();
