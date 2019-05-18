@@ -31,7 +31,7 @@ lookup.onreadystatechange = function() {
 	}
 	for (var i in h) {
 		a = document.createElement("a");
-		a.href = site + h[i]._source.Id
+		a.href = h[i]._source.Id
 		a.innerText = h[i]._source.ProjectName
 		a.className = "clickable bar result"
 		document.getElementById("searchBar").appendChild(a)
