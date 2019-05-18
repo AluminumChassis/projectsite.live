@@ -23,12 +23,9 @@ post.onreadystatechange = function() {
 	}
 }
 lookup.onreadystatechange = function() {
-	results = document.getElementsByClassName("clickable bar result")
 	e=JSON.parse(this.responseText)
 	h = e.hits.hits
-	for (var i = results.length - 1; i >= 0; i--) {
-		results[i].parentNode.removeChild(results[i])
-	}
+	clearSearch()
 	for (var i in h) {
 		a = document.createElement("a");
 		a.href = h[i]._source.Id
@@ -41,6 +38,12 @@ function submit(){
 	post.open("POST", url);
 	post.send(suggestion.value);
 	suggestion.value = ""
+}
+function clearSearch() {
+	results = document.getElementsByClassName("clickable bar result")
+	for (var i = results.length - 1; i >= 0; i--) {
+		results[i].parentNode.removeChild(results[i])
+	}
 }
 function searchProjects(){
 	search = false

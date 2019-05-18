@@ -21,7 +21,7 @@
     <div id="title">ProjectSite.live</div>
     <div id="content">
       <div id="searchBar">
-        <input id="search" placeholder="Search" maxlength="100" autocomplete="off" onkeydown="searchProjects()">
+        <input id="search" placeholder="Search" maxlength="100" autocomplete="off" onkeydown="searchProjects()" onfocus="searchProjects()" onfocusout="clearSearch()">
       </div>
     	<div class="clickable">Suggested Ideas (Click or tap to vote)</div>
     	<div class="clickable right" onclick="submit()" >Add Idea</div>
