@@ -18,7 +18,7 @@ post.onreadystatechange = function() {
 	for (var i in e) {
 		d = document.createElement("div");
 		d.className = "clickable bar"
-		d.innerHTML = e[i]
+		d.innerText = e[i]
 		document.getElementById("suggestions").appendChild(d)
 	}
 }
