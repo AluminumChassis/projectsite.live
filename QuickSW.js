@@ -18,7 +18,6 @@ if(typeof(document) != "undefined") {
             `/offline/index.html`,
             `/offline/style.css`,
             `/offline/script.js`,
-            `/offline/canyon.jpg`,
           ]).then(() => self.skipWaiting());
         })
       );
