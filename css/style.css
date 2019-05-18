@@ -106,9 +106,43 @@ h1,h6{
 	border: none;
 	width: 20vw;
 
+	padding-left: 10px;
 	font-size: 1.5vw;
 	box-shadow: 0px 5px 5px -4px #333;
 	height: calc(2vh + 2vw);
+}
+#search {
+
+	margin-bottom: 1vh;
+	padding-left: 10px;
+	float: left;
+	position: relative;
+	outline: none;
+	border: none;
+	width: 20vw;
+	font-size: 1.5vw;
+    box-sizing: border-box;
+	box-shadow: 0px 5px 5px -4px #333;
+	height: calc(2vh + 2vw);
+}
+.result {
+	color: black;
+	font-size: 1.5vw;
+	position: relative;
+	background-color: white;
+	text-decoration: none;
+	width: 20vw;
+}
+#searchBar {
+
+	padding-left: 10px;
+	position: fixed;
+	outline: none;
+	border: none;
+	width: 20vw;
+	overflow-x: hidden;
+	right: 5vh;
+	top: 2vh;
 }
 hr {
 	float: right;

@@ -20,9 +20,12 @@
   <body>
     <div id="title">ProjectSite.live</div>
     <div id="content">
+      <div id="searchBar">
+        <input id="search" placeholder="Search" maxlength="100" autocomplete="off" onkeydown="searchProjects()">
+      </div>
     	<div class="clickable">Suggested Ideas (Click or tap to vote)</div>
     	<div class="clickable right" onclick="submit()" >Add Idea</div>
-      <input id="suggestion" placeholder="Suggestion" maxlength="100">
+      <input id="suggestion" placeholder="Suggestion" maxlength="100" autocomplete="off">
       
       <div id="suggestions" style="margin-top: 4vh">
         <div class="clickable bar">Loading...</div>
