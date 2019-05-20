@@ -110,9 +110,42 @@ h1,h6{
 	font-size: 1.8vw;
 	box-shadow: 0px 5px 5px -4px #333;
 }
+.notif {
+	background-color: white;
+	position: fixed;
+	bottom: 1vh;
+	left: 1vh;
+	padding: 2vh;
+	font-size: 3vh;
+	width: 20vw;
+	height: 15vh;
+	mix-blend-mode: screen;
+}
+a {
+	position: relative;
+	float: none;
+}
+.notif > a {
+	position: absolute;
+	left: 2vh;
+	bottom: 2vh;
+	color: #000;
+	text-decoration: none;
+}
+.notif h1 {
+	font-size: 3vh;
+	margin-bottom: .7vh; 
+}
+.dismiss {
+	color: grey;
+	position: absolute;
+	top: 2vh;
+	right: 2vh;
+	cursor: pointer;
+}
 #search {
 	border-radius: 0px;
-	margin-bottom: 1vh;
+	margin-bottom: .5vh;
 	padding-left: 10px;
 	float: left;
 	position: relative;

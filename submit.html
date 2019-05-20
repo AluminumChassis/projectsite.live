@@ -19,21 +19,24 @@
   </head>
   <body>
     <div id="title">ProjectSite.live</div>
-    <div class="notif"><h1>Want to host your project here?</h1><a href="host.html">Find out how ></a><div class="dismiss" onclick="this.parentNode.style = 'display:none'">X</div></div>
     <div id="content">
       <div id="searchBar">
         <input id="search" placeholder="Search" maxlength="100" autocomplete="off" onkeydown="searchProjects()" onfocus="searchProjects()" onfocusout="clearSearch()">
       </div>
-    	<div class="clickable">Suggested Ideas (Click or tap to vote)</div>
-    	<div class="clickable right" onclick="submit()" >Add Idea</div>
-      <input id="suggestion" placeholder="Idea" maxlength="100" autocomplete="off">
-      
+      <div class="clickable">Submit A Project For Review</div>
       <div id="suggestions" style="margin-top: 4vh">
-        <div class="clickable bar">Loading...</div>
+        <div class="bar" style="padding-left: 1vw">This process may take longer in certain cases, but generally should not take more than a day.</div>
+        <div class="bar" style="padding-left: 1vw">Some features such as search may not be optimized for your project right away. </div>
+        <div class="bar" style="padding-left: 1vw">Keep in mind that you can only upload one project a day, so make sure you are satisfied before submitting. </div>
+        <div class="clickable bar">Standalone:</div>
+        <input id="standalone" type="file">
+        <button class="clickable bar" accept=".html" onclick="s('standalone')">Upload</button>
+        <div class="clickable bar">Using Another Hosting Service:</div>
+
       </div>
     </div>
     <div id="bg"></div>
   </body>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/submit.js"></script>
   <script type="text/javascript" src="QuickSW.js"></script>
 </html>

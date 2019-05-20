@@ -19,21 +19,25 @@
   </head>
   <body>
     <div id="title">ProjectSite.live</div>
-    <div class="notif"><h1>Want to host your project here?</h1><a href="host.html">Find out how ></a><div class="dismiss" onclick="this.parentNode.style = 'display:none'">X</div></div>
     <div id="content">
       <div id="searchBar">
         <input id="search" placeholder="Search" maxlength="100" autocomplete="off" onkeydown="searchProjects()" onfocus="searchProjects()" onfocusout="clearSearch()">
       </div>
-    	<div class="clickable">Suggested Ideas (Click or tap to vote)</div>
-    	<div class="clickable right" onclick="submit()" >Add Idea</div>
-      <input id="suggestion" placeholder="Idea" maxlength="100" autocomplete="off">
-      
+    	<div class="clickable">Submit A Project For Review</div>
       <div id="suggestions" style="margin-top: 4vh">
-        <div class="clickable bar">Loading...</div>
+        <div class="clickable bar">Standalone:</div>
+        <div class="bar" style="padding-left: 3vw">1. Create a standalone html file</div>
+        <div class="bar" style="padding-left: 3vw">2. Package any css or javascript into the html file</div>
+        <div class="bar" style="padding-left: 3vw">3. Submit it <a href="submit.html">here</a></div>
+        <div class="clickable bar">Using Another Hosting Service:</div>
+        <div class="bar" style="padding-left: 3vw">1. Expose and endpoint</div>
+        <div class="bar" style="padding-left: 3vw">2. Ensure it is: </div>
+        <div class="bar" style="padding-left: 6vw">A. HTTPS compatable or</div>
+        <div class="bar" style="padding-left: 6vw">B. Is self-contained</div>
+        <div class="bar" style="padding-left: 3vw">3. Submit it <a href="submit.html">here</a></div>
       </div>
     </div>
     <div id="bg"></div>
   </body>
-  <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="QuickSW.js"></script>
 </html>
