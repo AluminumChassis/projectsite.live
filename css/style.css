@@ -41,6 +41,7 @@ body {
  	filter: blur(3px);
 }
 #title {
+	cursor: pointer;
 	font-size: 2vw;
 	font-weight: 700;
 	background-color: white;
@@ -167,6 +168,7 @@ a {
 	text-decoration: none;
 	margin-bottom: .5vh;
 	width: 20vw;
+	float: left;
 }
 #searchBar {
 	padding-left: 10px;
