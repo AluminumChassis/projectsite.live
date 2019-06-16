@@ -1,4 +1,5 @@
 /* COPYRIGHT © 2019 BENJAMIN CICCARELLI */
+
 ::selection {
 	background: rgba(0,0,0,.7);
 	color: white;
@@ -11,178 +12,131 @@
 	display: none; 
 }
 *{
-
-	transition: all .1s ease-out;
+	transition: all .3s ease-out;
 	float: left;
 	font-family: sans-serif;
 }
-html{
-	scrollbar-width: none;
-	scroll-behavior: smooth;
-}
 body {
-	height: 100vh;
-	background: linear-gradient(30deg,#fd2,#f3d);
+	color: #eee;
+	background-color: #1a1a1a;
+	width: 100vw;
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
-}
-#bg {
-	top: -5px;
-	left: -5px;
-	position: fixed;
-	z-index: -1;
-	width: calc(100vw + 10px);
-	height: calc(100vh + 10px);
-
-	background-image: url("../canyon.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
- 	filter: blur(3px);
-}
-#title {
-	cursor: pointer;
-	font-size: 2vw;
-	font-weight: 700;
-	background-color: white;
-	color: black;
-	display: block;
-	padding: 1vw;
-	margin-left: 20vw;
-	margin-top: 4vw;
-	text-decoration: none;
-	border: 3px solid white;
-
-	mix-blend-mode: screen;
-}
-@keyframes slide  {
-  from {left: 120vw;}
-  to {left: -220vw;}
-}
-@keyframes slideBack {
-  from {left: -220vw;}
-  to {left: 120vw;}
-}
-#content {
 	font-weight: 400;
-	font-size:1.8vw;
-	background-color: white;
-	color: black;
-	display: block;
-	padding: 1vw;
-	width: 60vw;
-	margin-left: 20vw;
-	margin-top: 1vw;
-	text-decoration: none;
-	border: 3px solid white;
-
-	mix-blend-mode: screen;
 }
-h1,h6{
-	margin: 0
+#menu {
+	margin-left: 2vh;
+	align-items: stretch;
 }
-.bar {
-	width: 55vw;
-	margin-bottom: 1vh;
+.skewed {
+	transform: skew(-15deg);
 }
-.right {
-	float: right;
+.skewed p {
+	transform: skew(15deg);
 }
-.clickable {
-	user-select: none; /* supported by Chrome and Opera */
-   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-   -moz-user-select: none; /* Firefox */
-   -ms-user-select: none; /* Internet Explorer/Edge */
-	padding: .5vw;
-	box-shadow: 0px 5px 5px -4px #333;
-	cursor: pointer;	
+.skewed h1 {
+	transform: skew(15deg);
 }
-.clickable:hover {
-	box-shadow: 0px 6px 6px -4px #000;
+#menuRight {
+	position: absolute;
+	right: 0;
+	margin-right: 2vw;
 }
-#suggestion{
-	float: right;
-	outline: none;
+.menuButton {
+	color: #eee;
 	border: none;
-	width: 15vw;
-	padding: .5vw;
-	padding-left: 10px;
-	font-size: 1.8vw;
-	box-shadow: 0px 5px 5px -4px #333;
-}
-.notif {
-	background-color: white;
-	position: fixed;
-	bottom: 1vh;
-	left: 1vh;
-	padding: 2vh;
-	font-size: 3vh;
-	width: 20vw;
-	height: 15vh;
-	mix-blend-mode: screen;
-}
-a {
-	position: relative;
-	float: none;
-}
-.notif > a {
-	position: absolute;
-	left: 2vh;
-	bottom: 2vh;
-	color: #000;
-	text-decoration: none;
-}
-.notif h1 {
-	font-size: 3vh;
-	margin-bottom: .7vh; 
-}
-.dismiss {
-	color: grey;
-	position: absolute;
-	top: 2vh;
-	right: 2vh;
 	cursor: pointer;
+	margin: 2vw;
+	margin-right: 2vh;
+	height: 4vw;
 }
-#search {
-	border-radius: 0px;
-	margin-bottom: .5vh;
-	padding-left: 10px;
-	float: left;
-	position: relative;
-	outline: none;
-	border: none;
-	width: 20vw;
-	font-size: 1.8vw;
-    box-sizing: border-box;
+.menuButton p {
+	margin: 1vh;
+	font-size: 2vh;
+}
+.menuButton:hover {
+	color: #555;
+}
+.banner:hover {
+	color: #4e5
+}
+.unselectable {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+.miniHero {
 
-	padding: .5vw;
-	padding-left: 10px;
-	box-shadow: 0px 5px 5px -4px #333;
-}
-.result {
-	color: black;
-	font-size: 1.5vw;
 	position: relative;
-	background-color: white;
-	text-decoration: none;
-	margin-bottom: .5vh;
-	width: 20vw;
-	float: left;
-}
-#searchBar {
-	padding-left: 10px;
-	position: fixed;
-	outline: none;
-	border: none;
-	width: 20vw;
-	overflow-x: hidden;
-	right: 10vw;
-	top: 2vh;
-}
-hr {
-	float: right;
+	margin: 20vw;
+	margin-top: 10vh;
 	width: 60vw;
-	color:black;
-	/*border: 1px #000;*/
+	height: 100vw;
+}
+.miniHero h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 5vh;
+}
+.miniHero p {
+	margin-top: 1vh;
+	text-align: center;
+	font-size: 3vh;
+}
+.sideCanvas {
+	left: 0;
+	position: absolute;
+	top: 20vh;
+	width: 100vw;
+	height: 50vh;
+	background-color: #1a1a1a;
+}
+.hollowButton {
+	min-width: 5vw;
+	background-color: #1a1a1a;
+	border: .3vh solid white;
+	text-align: center;
+}
+.hollowButton:hover {
+	background-color: white;
+}
+#dropDown {
+	overflow: hidden;
+	position: fixed;
+	z-index: 100;
+	width: 50vw;
+	height: 50vh;
+	top: -50vh;
+	left: 25vw;
+	background-color: #222;
+}
+#clickOut {
+	display: none;
+	opacity: .5;
+	position: fixed;
+	z-index: 99;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+}
+.dropDownDivider {
+	width: 27vw;
+	position: absolute;
+	left: -5vw;
+	height: 100%;
+	background-color: grey;
+	border-right: #333 solid 4vh; 
+}
+.dropDownDivider h1 {
+	font-size: 5vh;
+	margin-left: 5vw;
+	width: 20vw;
+}
+.dropDownDivider p {
+	font-size: 2vh;
+	margin-left: 5vw;
+	width: 20vw;
 }

@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ProjectSite</title>
-    <meta property="og:title" content="ProjectSite">
+    <title>ProjectSite.Live | Benjamin Ciccarelli's Best Projects</title>
+    <meta name="google-signin-client_id" content="288567439997-ug7m9a6mvll9rfditodqb00d8js9v4c4.apps.googleusercontent.com">
+    <meta property="og:title" content="Web Services">
     <meta property="og:locale" content="en_US">
-    <link rel="shortcut icon" type="image/png" href="images/b.png"/>
+    <link rel="shortcut icon" type="image/png" href="assets/icon.png"/>
+    <link rel="icon" href="icon.png">
     <link rel="canonical" href="http://ciccarelli.me/">
     <meta property="og:url" content="http://ciccarelli.me/">
     <meta property="og:site_name" content="Ben Ciccarelli">
@@ -18,22 +20,46 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div id="title" onclick="window.location.href='index.html'">ProjectSite.live</div>
-    <div class="notif"><h1>Want to host your project here?</h1><a href="host.html">Find out how ></a><div class="dismiss" onclick="this.parentNode.style = 'display:none'">X</div></div>
-    <div id="content">
-      <div id="searchBar">
-        <input id="search" placeholder="Search" maxlength="100" autocomplete="off" onkeydown="searchProjects()" onfocus="searchProjects()" onfocusout="setTimeout(clearSearch,200)">
+    <div id="clickOut"></div>
+    <div id="dropDown">
+      <div class="skewed dropDownDivider">
+        <h1>Login</h1>
+        <p>
+          Login to have access to various features + projects across the site
+        </p>
       </div>
-    	<div class="clickable">Suggested Ideas (Click or tap to vote)</div>
-    	<div class="clickable right" onclick="submit()" >Add Idea</div>
-      <input id="suggestion" placeholder="Idea" maxlength="100" autocomplete="off">
-      
-      <div id="suggestions" style="margin-top: 4vh">
-        <div class="clickable bar">Loading...</div>
-      </div>
+      <div id="signIn" class="g-signin2" data-onsuccess="onSignIn"></div>
     </div>
-    <div id="bg"></div>
+    <div id="menu">
+      <span class="menuButton unselectable">
+        <p>
+          ProjectSite.Live
+        </p>
+      </span>
+      <span class="menuButton unselectable">
+        <p>
+          Projects
+        </p>
+      </span>
+      <span class="menuButton unselectable">
+        <p>
+          About
+        </p>
+      </span>
+    </div>
+    <div id = "menuRight">
+      <button id="login" class="menuButton unselectable right hollowButton">
+          Login
+      </button>
+    </div>
+    <div class="graphic"></div>
+    <div class="miniHero">
+      <h1>Please Sign-in with Google or Github</h1>
+      <p>This is where I (Benjamin Ciccarelli) keep all of my best projects. You must sign in for me to provide more functionality and better services.</p>
+    </div>
   </body>
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="QuickSW.js"></script>
+  <script type="text/javascript" src="js/animate.js"></script>
+  <script type="text/javascript" src="js/particles.min.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 </html>
