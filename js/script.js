@@ -10,5 +10,6 @@ clickOut.onclick = function() {
 	clickOut.style.display = "none"
 }
 function onSignIn(){
-	
+	clickOut.onclick()
+	document.getElementById('signInRequest')	
 }
