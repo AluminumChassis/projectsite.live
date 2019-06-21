@@ -80,7 +80,6 @@ hr {
 	margin: 10vw;
 	margin-top: 10vh;
 	width: 60vw;
-	height: 100vw;
 }
 .miniHero h1 {
 	width: 100%;
@@ -160,10 +159,13 @@ hr {
 	top:5vw;
 }
 .clickable {
-	color: var(--secondary-color)
+	color: var(--secondary-color);
 	cursor: pointer; 
 	text-decoration: underline;
 }
 .fillWidth {
 	width: 100%
+}
+#content {
+	display: none;
 }
