@@ -159,10 +159,8 @@ hr {
 	right: 2vw;
 	top:5vw;
 }
-.secondary {
-	background-color: var(--secondary)
-}
 .clickable {
+	color: var(--secondary-color)
 	cursor: pointer; 
 	text-decoration: underline;
 }
