@@ -166,3 +166,6 @@ hr {
 	cursor: pointer; 
 	text-decoration: underline;
 }
+.fillWidth {
+	width: 100%
+}
