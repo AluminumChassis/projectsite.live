@@ -26,15 +26,18 @@
       <div class="skewed dropDownDivider">
       </div>
       <div class="dropDownContentLeft">
-        <h1>Sign In</h1>
+        <h1>Project Access</h1>
         <p>
-          Sign in to have access to various features + projects across the site
+          Sign in to have access to various features and projects across the site. For info on data collected, check <a href="privacy.html">here.</a>
         </p>
       </div>
       <div id="dropDownContent">
+        <h1 style="text-align: center; width: 20vw;">Sign in:</h1>
         <div id="signIn" class="g-signin2" data-onsuccess="onSignIn" style="margin-left:5vw"></div>
-        <a onclick="onSignIn();" class="clickable fillWidth" style="margin-top: 15vh;"> Sign In As Guest </a>
-        <a class="warning">Warning: Signing in as a guest will let you view other products but not use them. </a>
+      </div>
+      <div class="warning menuMessage">
+        <p onclick="onSignIn();" class="clickable fillWidth" style="margin-bottom: 1vh;"> Sign In As Guest </p>
+        Warning: Signing in as a guest will let you view other products but not use them. 
       </div>
     </div>
     <div id="menuHolder"></div>

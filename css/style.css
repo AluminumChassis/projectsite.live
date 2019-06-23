@@ -135,10 +135,10 @@ hr {
 .dropDownDivider {
 	width: 100%;
 	position: absolute;
-	left: -60%;
+	left: -57%;
 	height: 100%;
 	background-color: var(--dark-highlight);
-	border-right: var(--secondary-color) solid 4vh; 
+	border-right: var(--secondary-color) solid 2.5vw; 
 }
 .dropDownDivider h1 {
 	font-size: 7vh;
@@ -179,4 +179,14 @@ hr {
 	position: absolute;
 	margin-left: 3vh;
 	margin-top: 1vh; 
+}
+.menuMessage {
+	position: absolute;
+	right: 2vw;
+	bottom: 5vh;
+	width: 40%;
+}
+a {
+	float: none;
+	color: var(--secondary-color);
 }

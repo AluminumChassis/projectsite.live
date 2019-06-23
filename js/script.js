@@ -38,6 +38,16 @@ function signOut() {
 	});
 	window.location.reload()
 }
+function attachSignin(element) {
+	console.log(element.id);
+	auth2.attachClickHandler(element, {},
+	    function(googleUser) {
+	      document.getElementById('name').innerText = "Signed in: " +
+	          googleUser.getBasicProfile().getName();
+	    }, function(error) {
+	      alert(JSON.stringify(error, undefined, 2));
+	    });
+}
 fetch('/nav.html')
 	.then(function(response) {
 		return response.text();
