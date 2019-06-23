@@ -13,7 +13,7 @@ clickOut.onclick = function() {
 	clickOut.style.display = "none"
 }
 function onSignIn(googleUser){
-	doSignOut.style.display = true
+	doSignOut.style.display = "block"
 	clickOut.onclick()
 	document.getElementById('signInRequest').style.display = "none";
 	if(content){
