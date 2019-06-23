@@ -36,9 +36,9 @@ function signOut() {
 	});
 }
 fetch('/nav.html')
-  .then(function(response) {
-    return response.text();
-  })
-  .then(function(body) {
-  	document.getElementById("menuHolder").innerHTML += body;
-  });
+	.then(function(response) {
+		return response.text();
+	})
+	.then(function(body) {
+		document.getElementById("menuHolder").innerHTML += body;
+	});

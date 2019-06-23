@@ -52,7 +52,8 @@ hr {
 #menuRight {
 	position: absolute;
 	right: 0;
-	margin-right: 2vw;
+	margin-top: 4vh;
+	margin-right: 5vh;
 }
 .menuButton {
 	color: var(--text-color);
