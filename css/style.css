@@ -67,7 +67,7 @@ hr {
 	font-size: 2vh;
 }
 .menuButton:hover {
-	color: #555;
+	color: var(--secondary-color);;
 }
 .unselectable {
     user-select: none;
@@ -133,9 +133,9 @@ hr {
 	background-color: black;
 }
 .dropDownDivider {
-	width: 27vw;
+	width: 100%;
 	position: absolute;
-	left: -5vw;
+	left: -60%;
 	height: 100%;
 	background-color: var(--dark-highlight);
 	border-right: var(--secondary-color) solid 4vh; 
@@ -173,4 +173,10 @@ hr {
 }
 #signOut {
 	display: none;
+}
+.dropDownContentLeft{
+	width: 35%;
+	position: absolute;
+	margin-left: 3vh;
+	margin-top: 1vh; 
 }
