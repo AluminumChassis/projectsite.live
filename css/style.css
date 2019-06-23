@@ -60,7 +60,7 @@ hr {
 	border: none;
 	cursor: pointer;
 	margin-right: 2vw;
-	height: 4vw;
+	min-height: 4vw;
 }
 .menuButton p {
 	margin: 1vh;
