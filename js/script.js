@@ -40,5 +40,5 @@ fetch('/nav.html')
     return response.text();
   })
   .then(function(body) {
-    document.querySelector('#div').innerHTML = body;
+    document.getElementsByTag("body")[0].innerHTML += body;
   });
