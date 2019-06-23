@@ -1,4 +1,3 @@
-
 function getCookie(cookieName){
 	c = document.cookie
 	cookieIndex = c.indexOf(cookieName+"=")

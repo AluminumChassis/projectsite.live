@@ -4,14 +4,14 @@ login = document.getElementById('login')
 let doSignOut
 content = document.getElementById('content')
 backend = "https://8713297occ.execute-api.us-east-1.amazonaws.com/backend"
-login.onclick = function () {
+login?login.onclick = function () {
 	dropDown.style.top = "25vh"
 	clickOut.style.display = "block"
-}
-clickOut.onclick = function() {
+}:0
+clickout?clickOut.onclick = function() {
 	dropDown.style.top = "-50vh"
 	clickOut.style.display = "none"
-}
+}:0
 function onSignIn(googleUser){
 	doSignOut.style.display = "block"
 	clickOut.onclick()
