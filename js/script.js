@@ -8,7 +8,7 @@ login?login.onclick = function () {
 	dropDown.style.top = "25vh"
 	clickOut.style.display = "block"
 }:0
-clickout?clickOut.onclick = function() {
+clickOut?clickOut.onclick = function() {
 	dropDown.style.top = "-50vh"
 	clickOut.style.display = "none"
 }:0
