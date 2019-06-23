@@ -40,5 +40,5 @@ fetch('/nav.html')
     return response.text();
   })
   .then(function(body) {
-  	document.getElementById("menuHolder")[0].innerHTML += body;
+  	document.getElementById("menuHolder").innerHTML += body;
   });
