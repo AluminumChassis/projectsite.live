@@ -1,8 +1,9 @@
 dropDown = document.getElementById('dropDown')
 clickOut = document.getElementById('clickOut')
 login = document.getElementById('login')
+doSignOut = document.getElementById('signOut')
 content = document.getElementById('content')
-backend = "https://95kwq5a3x0.execute-api.us-east-1.amazonaws.com/Functional"
+backend = "https://8713297occ.execute-api.us-east-1.amazonaws.com/backend"
 login.onclick = function () {
 	dropDown.style.top = "25vh"
 	clickOut.style.display = "block"
@@ -11,7 +12,8 @@ clickOut.onclick = function() {
 	dropDown.style.top = "-50vh"
 	clickOut.style.display = "none"
 }
-function onSignIn(){
+function onSignIn(googleUser){
+	doSignOut.style.display = true
 	clickOut.onclick()
 	document.getElementById('signInRequest').style.display = "none";
 	if(content){
@@ -34,6 +36,7 @@ function signOut() {
 	auth2.signOut().then(function () {
 	  console.log('User signed out.');
 	});
+	window.location.reload()
 }
 fetch('/nav.html')
 	.then(function(response) {
