@@ -1,7 +1,7 @@
 dropDown = document.getElementById('dropDown')
 clickOut = document.getElementById('clickOut')
 login = document.getElementById('login')
-doSignOut = document.getElementById('signOut')
+let doSignOut
 content = document.getElementById('content')
 backend = "https://8713297occ.execute-api.us-east-1.amazonaws.com/backend"
 login.onclick = function () {
@@ -44,4 +44,5 @@ fetch('/nav.html')
 	})
 	.then(function(body) {
 		document.getElementById("menuHolder").innerHTML += body;
+		doSignOut = document.getElementById('signOut')
 	});
