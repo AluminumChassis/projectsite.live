@@ -29,7 +29,7 @@ function sendIDToken(id_token, callback){
 	xhr.open('POST', backend);
 	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 	xhr.onload = callback
-	xhr.send('idtoken=' + id_token);
+	xhr.send(JSON.stringify({token: id_token}));
 }
 function signOut() {
 	var auth2 = gapi.auth2.getAuthInstance();
@@ -38,21 +38,11 @@ function signOut() {
 	});
 	window.location.reload()
 }
-function attachSignin(element) {
-	console.log(element.id);
-	auth2.attachClickHandler(element, {},
-	    function(googleUser) {
-	      document.getElementById('name').innerText = "Signed in: " +
-	          googleUser.getBasicProfile().getName();
-	    }, function(error) {
-	      alert(JSON.stringify(error, undefined, 2));
-	    });
-}
 fetch('/nav.html')
 	.then(function(response) {
 		return response.text();
 	})
 	.then(function(body) {
-		document.getElementById("menuHolder").innerHTML += body;
+		document.getElementById("menuHolder").innerHTML = body;
 		doSignOut = document.getElementById('signOut')
 	});
