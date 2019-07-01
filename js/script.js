@@ -13,6 +13,7 @@ clickOut?clickOut.onclick = function() {
 	clickOut.style.display = "none"
 }:0
 function onSignIn(googleUser){
+	console.log("signing in")
 	doSignOut.style.display = "block"
 	clickOut.onclick()
 	document.getElementById('signInRequest').style.display = "none";
