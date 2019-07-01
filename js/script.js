@@ -29,6 +29,7 @@ function sendIDToken(id_token, callback){
 	xhr.open('POST', backend);
 	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 	xhr.onload = callback
+	console.log(id_token)
 	xhr.send(JSON.stringify({token: id_token}));
 }
 function signOut() {
