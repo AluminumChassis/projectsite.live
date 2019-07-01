@@ -19,7 +19,9 @@ function onSignIn(googleUser){
 	if(content){
 		content.style.display="block"
 	}
+  	console.log(googleUser)
   	var id_token = googleUser.getAuthResponse().id_token;
+  	console.log(id_token)
   	sendIDToken(id_token, function (response) {
   		console.log(this.responseText)
   	})
