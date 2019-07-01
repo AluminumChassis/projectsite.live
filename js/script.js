@@ -27,7 +27,6 @@ function onSignIn(googleUser){
 function sendIDToken(id_token, callback){
 	var xhr = new XMLHttpRequest();
 	xhr.open('POST', backend);
-	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 	xhr.onload = callback
 	console.log(id_token)
 	xhr.send(JSON.stringify({token: id_token}));
